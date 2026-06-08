@@ -1,46 +1,81 @@
 # Hi there! 👋 I'm Ved Patil
 
-### 🚀 Software Developer | AI Enthusiast | Open Source Contributor
+### 🚀 Full Stack Developer | Open Source Contributor | Software Engineer
 
-Welcome to my GitHub profile! I'm a passionate **Computer Engineering student** exploring the vast world of **Artificial Intelligence, Large Language Models, and Software Development**. I love building **AI-powered applications and contributing to open-source projects**.
+Welcome to my GitHub profile! I'm passionate about building scalable web applications, solving real-world problems, and continuously learning new technologies. I enjoy working across the entire development lifecycle—from designing user interfaces to developing backend systems and deploying applications.
 
 ---
 
 ## 🔥 About Me
-- 👨‍💻 **B.Tech in Computer Engineering** @ Madhuben & Bhanubhai Patel Institute of Technology (2022 - 2026)
-- 💡 Passionate about **AI, Machine Learning, LLMs, and Backend Development**
-- 🛠️ Skilled in **Python, JavaScript, TypeScript, Java, C++**
 
+* 👨‍💻 Full Stack Developer with experience in modern web technologies
+* 🌱 Continuously learning software architecture, system design, and DevOps practices
+* ⚡ Interested in building scalable, maintainable, and high-performance applications
+* 🛠️ Enjoy working with frontend, backend, databases, and deployment workflows
+* 🤝 Open to collaborating on interesting projects and open-source contributions
 
 ---
 
 ## 🛠️ Technologies & Tools
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nextjs/nextjs.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/linux/linux.png"></code>
 
----
+### Languages
 
-![Ved's GitHub Stats](https://github-readme-stats.vercel.app/api?username=vedpatil1345&theme=tokyonight&show_icons=true&hide=["issues"])
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vedpatil1345&theme=tokyonight&layout=compact)
+<p>
+  <img src="https://skillicons.dev/icons?i=java,ts,js,python,cpp" />
+</p>
 
-![](https://komarev.com/ghpvc/?username=vedpatil1345)
+### Frontend
 
----
+<p>
+  <img src="https://skillicons.dev/icons?i=react,nextjs,html,css,tailwind,vite" />
+</p>
 
-## 🤝🏻 Connect with Me
-<p align="center">
-<a href="https://www.linkedin.com/in/ved-patil-a71968250/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Ved%20Patil-blue?style=flat-square&logo=linkedin"></a>
-<a href="mailto:vedpatil13042005@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-vedpatil13042005@gmail.com-blue?style=flat-square&logo=gmail"></a>
-<a href="https://github.com/vedpatil1345"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-vedpatil1345-blue?style=flat-square&logo=github"></a>
+### Backend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=spring,nodejs" />
+</p>
+
+### Database
+
+<p>
+  <img src="https://skillicons.dev/icons?i=postgres,mysql,firebase" />
+</p>
+
+### DevOps & Tools
+
+<p>
+  <img src="https://skillicons.dev/icons?i=docker,jenkins,git,github,linux" />
 </p>
 
 ---
 
-### ⚡ Fun Fact:
-I love exploring new technologies, solving complex coding problems, and experimenting with AI models! Let's connect and build something amazing together! 🚀
+## 📊 GitHub Statistics
+
+![Ved's GitHub Stats](https://github-readme-stats.vercel.app/api?username=vedpatil-dev\&theme=tokyonight\&show_icons=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=vedpatil-dev\&theme=tokyonight\&layout=compact)
+
+![GitHub Streak](https://streak-stats.demolab.com?user=vedpatil-dev\&theme=tokyonight)
+
+---
+
+## 🤝 Connect with Me
+
+<p align="center">
+<a href="https://www.linkedin.com/in/vedpatil-dev">
+  <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Ved%20Patil-blue?style=flat-square&logo=linkedin">
+</a>
+<a href="mailto:vedpatil13042005@gmail.com">
+  <img alt="Email" src="https://img.shields.io/badge/Email-Contact%20Me-blue?style=flat-square&logo=gmail">
+</a>
+<a href="https://github.com/vedpatil-dev">
+  <img alt="GitHub" src="https://img.shields.io/badge/GitHub-vedpatil--dev-blue?style=flat-square&logo=github">
+</a>
+</p>
+
+---
+
+### ⚡ Fun Fact
+
+I enjoy building products, automating workflows, optimizing performance, and occasionally spending hours debugging a one-line mistake.
