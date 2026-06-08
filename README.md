@@ -52,11 +52,9 @@ Welcome to my GitHub profile! I'm passionate about building scalable web applica
 
 ## 📊 GitHub Statistics
 
-![Ved's GitHub Stats](https://github-readme-stats.vercel.app/api?username=vedpatil-dev\&theme=tokyonight\&show_icons=true)
+![GitHub Streak](https://streak-stats.demolab.com?user=vedpatil-dev&theme=tokyonight)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=vedpatil-dev\&theme=tokyonight\&layout=compact)
-
-![GitHub Streak](https://streak-stats.demolab.com?user=vedpatil-dev\&theme=tokyonight)
+![Profile Summary](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=vedpatil-dev&theme=tokyonight)
 
 ---
 
