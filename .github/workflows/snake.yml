@@ -1,0 +1,38 @@
+name: Generate Contribution Snake
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+    paths-ignore:
+      - "assets/github-snake-dark.svg"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate github-snake-dark.svg (Deep Dark palette)
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/github-snake-dark.svg?palette=github-dark&color_snake=#38bdf8&color_dots=#090b10,#0f141c,#0e4429,#006d32,#26a641
+
+      - name: Commit & Push updated snake SVG
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/github-snake-dark.svg
+          git diff --staged --quiet || git commit -m "chore: update contribution snake svg [skip ci]"
+          git push

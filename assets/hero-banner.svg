@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07080c" />
+      <stop offset="50%" stop-color="#0b0d14" />
+      <stop offset="100%" stop-color="#090b10" />
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8fafc">
+        <animate attributeName="stop-color" values="#f8fafc;#60a5fa;#38bdf8;#f8fafc" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#60a5fa">
+        <animate attributeName="stop-color" values="#60a5fa;#38bdf8;#f8fafc;#60a5fa" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#38bdf8">
+        <animate attributeName="stop-color" values="#38bdf8;#f8fafc;#60a5fa;#38bdf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0" />
+      <stop offset="30%" stop-color="#3b82f6" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.18" />
+      <stop offset="50%" stop-color="#0284c7" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#1e3a8a" stop-opacity="0.18" />
+    </linearGradient>
+
+    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.35" />
+    </linearGradient>
+
+    <radialGradient id="glowBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0" />
+    </radialGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.6" stroke-opacity="0.12" />
+    </pattern>
+
+    <style>
+      .font-sans {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      }
+      .font-mono {
+        font-family: 'JetBrains Mono', 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+      }
+      .hero-title {
+        font-size: 54px;
+        font-weight: 800;
+        letter-spacing: -1.2px;
+      }
+      .hero-subtitle {
+        font-size: 14px;
+        font-weight: 600;
+        fill: #cbd5e1;
+        letter-spacing: 2.8px;
+      }
+      .hero-stack {
+        font-size: 13px;
+        font-weight: 500;
+        fill: #475569;
+        letter-spacing: 1.2px;
+      }
+    </style>
+  </defs>
+
+  <!-- Main Deep Dark Background -->
+  <rect width="1200" height="280" rx="16" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.5" />
+  <rect width="1200" height="280" rx="16" fill="url(#grid)" />
+
+  <!-- Subtle Ambient Glow Orbs -->
+  <circle cx="300" cy="120" r="220" fill="url(#glowBlue)">
+    <animate attributeName="cx" values="300;360;300" dur="10s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="900" cy="150" r="220" fill="url(#glowCyan)">
+    <animate attributeName="cx" values="900;840;900" dur="12s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Main Heading -->
+  <text x="600" y="106" text-anchor="middle" class="font-sans hero-title" fill="url(#titleGrad)">
+    Ved Patil
+  </text>
+
+  <!-- Core Roles Subtitle -->
+  <text x="600" y="150" text-anchor="middle" class="font-mono hero-subtitle">
+    FULL STACK DEVELOPER  •  SOFTWARE ENGINEER  •  OPEN SOURCE CONTRIBUTOR
+  </text>
+
+  <!-- Glowing Divider Bar -->
+  <rect x="350" y="172" width="500" height="1.5" fill="url(#accentLine)" />
+
+  <!-- Clean Core Focus Line -->
+  <text x="600" y="204" text-anchor="middle" class="font-mono hero-stack">
+    <tspan fill="#94a3b8">JAVA</tspan>  //  <tspan fill="#94a3b8">JAVASCRIPT</tspan>  //  <tspan fill="#94a3b8">TYPESCRIPT</tspan>  //  <tspan fill="#94a3b8">SPRING BOOT</tspan>  //  <tspan fill="#94a3b8">REACT</tspan>  //  <tspan fill="#94a3b8">NEXT.JS</tspan>  //  <tspan fill="#94a3b8">NODE.JS</tspan>  //  <tspan fill="#94a3b8">AWS</tspan>
+  </text>
+
+  <!-- Animated Bottom Waves -->
+  <g>
+    <path fill="url(#waveGrad1)">
+      <animate attributeName="d" dur="10s" repeatCount="indefinite"
+        values="
+          M 0 238 Q 300 212 600 238 T 1200 238 L 1200 280 L 0 280 Z;
+          M 0 238 Q 300 264 600 238 T 1200 238 L 1200 280 L 0 280 Z;
+          M 0 238 Q 300 212 600 238 T 1200 238 L 1200 280 L 0 280 Z" />
+    </path>
+    <path fill="url(#waveGrad2)">
+      <animate attributeName="d" dur="7s" repeatCount="indefinite"
+        values="
+          M 0 248 Q 300 268 600 248 T 1200 248 L 1200 280 L 0 280 Z;
+          M 0 248 Q 300 222 600 248 T 1200 248 L 1200 280 L 0 280 Z;
+          M 0 248 Q 300 268 600 248 T 1200 248 L 1200 280 L 0 280 Z" />
+    </path>
+  </g>
+</svg>

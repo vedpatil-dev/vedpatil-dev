@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 140" width="100%" height="100%">
+  <defs>
+    <linearGradient id="footBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07080c" />
+      <stop offset="50%" stop-color="#0b0d14" />
+      <stop offset="100%" stop-color="#090b10" />
+    </linearGradient>
+
+    <linearGradient id="fWave1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.18" />
+      <stop offset="50%" stop-color="#0284c7" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#1e3a8a" stop-opacity="0.18" />
+    </linearGradient>
+
+    <linearGradient id="fWave2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.3" />
+    </linearGradient>
+
+    <style>
+      .mono {
+        font-family: 'JetBrains Mono', 'Fira Code', 'SFMono-Regular', Consolas, monospace;
+      }
+      .sans {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="140" rx="14" fill="url(#footBg)" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Animated Waves -->
+  <path fill="url(#fWave1)">
+    <animate attributeName="d" dur="9s" repeatCount="indefinite"
+      values="
+        M 0 65 Q 300 30 600 65 T 1200 65 L 1200 140 L 0 140 Z;
+        M 0 65 Q 300 95 600 65 T 1200 65 L 1200 140 L 0 140 Z;
+        M 0 65 Q 300 30 600 65 T 1200 65 L 1200 140 L 0 140 Z" />
+  </path>
+
+  <path fill="url(#fWave2)">
+    <animate attributeName="d" dur="6.5s" repeatCount="indefinite"
+      values="
+        M 0 82 Q 300 110 600 82 T 1200 82 L 1200 140 L 0 140 Z;
+        M 0 82 Q 300 50 600 82 T 1200 82 L 1200 140 L 0 140 Z;
+        M 0 82 Q 300 110 600 82 T 1200 82 L 1200 140 L 0 140 Z" />
+  </path>
+
+  <!-- Footer Tagline -->
+  <text x="600" y="60" text-anchor="middle" class="sans" font-size="15.5" font-weight="600" fill="#e2e8f0">
+    Architecting scalable web applications, automating workflows, and engineering for performance.
+  </text>
+
+  <text x="600" y="95" text-anchor="middle" class="mono" font-size="11.5" fill="#64748b" letter-spacing="1.8">
+    VED PATIL (@vedpatil-dev)  •  FULL STACK SOFTWARE ENGINEER
+  </text>
+</svg>

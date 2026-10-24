@@ -1,0 +1,492 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090b10" />
+      <stop offset="100%" stop-color="#0d1017" />
+    </linearGradient>
+
+    <linearGradient id="pillBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111520" />
+      <stop offset="100%" stop-color="#0b0e15" />
+    </linearGradient>
+
+    <linearGradient id="scanLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
+    </linearGradient>
+
+    <style>
+      .sans {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
+      .mono {
+        font-family: 'JetBrains Mono', 'Fira Code', 'SFMono-Regular', Consolas, monospace;
+      }
+      @keyframes floatA {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-3px); }
+      }
+      @keyframes floatB {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(3px); }
+      }
+      @keyframes dashMove {
+        to { stroke-dashoffset: -120; }
+      }
+      .fa-1 { animation: floatA 3.6s ease-in-out infinite; }
+      .fa-2 { animation: floatB 4.0s ease-in-out infinite 0.3s; }
+      .fa-3 { animation: floatA 4.4s ease-in-out infinite 0.6s; }
+      .fa-4 { animation: floatB 3.8s ease-in-out infinite 0.9s; }
+      .fa-5 { animation: floatA 4.2s ease-in-out infinite 1.2s; }
+      .panel {
+        fill: url(#cardBg);
+        stroke: #1e293b;
+        stroke-width: 1.5;
+      }
+      .chip {
+        fill: url(#pillBg);
+        stroke-width: 1.2;
+      }
+      .cat-title {
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+      }
+      .tech-name {
+        font-size: 13px;
+        font-weight: 600;
+        fill: #e2e8f0;
+      }
+      .tech-sub {
+        font-size: 10px;
+        font-weight: 500;
+        fill: #64748b;
+      }
+      .data-stream {
+        stroke-dasharray: 6 8;
+        animation: dashMove 6s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Outer Deep Dark Canvas Background -->
+  <rect x="2" y="2" width="1096" height="656" rx="16" fill="#06070a" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Connecting Data Streams Between Bento Panels -->
+  <line x1="540" y1="110" x2="560" y2="110" stroke="#3b82f6" stroke-width="2" class="data-stream" />
+  <line x1="275" y1="220" x2="275" y2="236" stroke="#38bdf8" stroke-width="2" class="data-stream" />
+  <line x1="825" y1="220" x2="825" y2="236" stroke="#10b981" stroke-width="2" class="data-stream" />
+  <line x1="550" y1="435" x2="550" y2="452" stroke="#38bdf8" stroke-width="2" class="data-stream" />
+
+  <!-- ========================================================= -->
+  <!-- PANEL 1: CORE LANGUAGES (Top Left)                        -->
+  <!-- ========================================================= -->
+  <g transform="translate(20, 20)">
+    <rect width="520" height="200" rx="12" class="panel" />
+    <rect x="20" y="0" width="180" height="2" fill="url(#scanLine)">
+      <animate attributeName="x" values="20;320;20" dur="6s" repeatCount="indefinite" />
+    </rect>
+    <!-- Code Brackets Vector Icon -->
+    <g transform="translate(20, 21)" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 5 2 L 1 7 L 5 12 M 13 2 L 17 7 L 13 12 M 10 1 L 8 13" />
+    </g>
+    <text x="46" y="33" class="mono cat-title" fill="#e2e8f0">01 // PROGRAMMING LANGUAGES</text>
+    <text x="500" y="33" text-anchor="end" class="mono" font-size="11" fill="#475569">PRIMARY: JAVA &amp; JS/TS</text>
+    <line x1="18" y1="46" x2="502" y2="46" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Row 1: Primary Languages (Java, JavaScript, TypeScript) -->
+    <!-- Java -->
+    <g transform="translate(18, 62)">
+      <g class="fa-1">
+        <rect width="152" height="54" rx="9" class="chip" stroke="#f89820" stroke-opacity="0.7" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#f89820" fill-opacity="0.15" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#f89820">JV</text>
+        <text x="50" y="25" class="sans tech-name">Java</text>
+        <text x="50" y="40" class="mono tech-sub" fill="#f89820">Primary • JVM</text>
+      </g>
+    </g>
+
+    <!-- JavaScript -->
+    <g transform="translate(184, 62)">
+      <g class="fa-2">
+        <rect width="152" height="54" rx="9" class="chip" stroke="#f7df1e" stroke-opacity="0.7" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#f7df1e" fill-opacity="0.15" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#f7df1e">JS</text>
+        <text x="50" y="25" class="sans tech-name">JavaScript</text>
+        <text x="50" y="40" class="mono tech-sub" fill="#f7df1e">Primary • ESNext</text>
+      </g>
+    </g>
+
+    <!-- TypeScript -->
+    <g transform="translate(350, 62)">
+      <g class="fa-3">
+        <rect width="152" height="54" rx="9" class="chip" stroke="#3178c6" stroke-opacity="0.75" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#3178c6" fill-opacity="0.18" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#60a5fa">TS</text>
+        <text x="50" y="25" class="sans tech-name">TypeScript</text>
+        <text x="50" y="40" class="mono tech-sub" fill="#60a5fa">Primary • Typed</text>
+      </g>
+    </g>
+
+    <!-- Row 2: Python, C++, Rust -->
+    <!-- Python -->
+    <g transform="translate(18, 128)">
+      <g class="fa-4">
+        <rect width="152" height="54" rx="9" class="chip" stroke="#334155" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#3776ab" fill-opacity="0.18" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#38bdf8">PY</text>
+        <text x="50" y="25" class="sans tech-name">Python</text>
+        <text x="50" y="40" class="mono tech-sub">Automation / AI</text>
+      </g>
+    </g>
+
+    <!-- C++ -->
+    <g transform="translate(184, 128)">
+      <g class="fa-5">
+        <rect width="152" height="54" rx="9" class="chip" stroke="#334155" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#00599c" fill-opacity="0.2" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="12" font-weight="800" fill="#60a5fa">C++</text>
+        <text x="50" y="25" class="sans tech-name">C++</text>
+        <text x="50" y="40" class="mono tech-sub">Algorithms / STL</text>
+      </g>
+    </g>
+
+    <!-- Rust -->
+    <g transform="translate(350, 128)">
+      <g class="fa-1">
+        <rect width="152" height="54" rx="9" class="chip" stroke="#334155" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#f74c00" fill-opacity="0.18" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#fb923c">RS</text>
+        <text x="50" y="25" class="sans tech-name">Rust</text>
+        <text x="50" y="40" class="mono tech-sub">Systems / Perf</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- PANEL 2: BACKEND & DATABASES (Top Right)                  -->
+  <!-- ========================================================= -->
+  <g transform="translate(560, 20)">
+    <rect width="520" height="200" rx="12" class="panel" />
+    <rect x="300" y="0" width="180" height="2" fill="url(#scanLine)">
+      <animate attributeName="x" values="320;20;320" dur="6s" repeatCount="indefinite" />
+    </rect>
+    <!-- Database Stack Vector Icon -->
+    <g transform="translate(20, 20)" fill="none" stroke="#10b981" stroke-width="1.7" stroke-linecap="round">
+      <ellipse cx="8" cy="4" rx="7" ry="2.5" />
+      <path d="M 1 4 L 1 9 C 1 10.4 4.1 11.5 8 11.5 C 11.9 11.5 15 10.4 15 9 L 15 4" />
+      <path d="M 1 9 L 1 13.5 C 1 14.9 4.1 16 8 16 C 11.9 16 15 14.9 15 13.5 L 15 9" />
+    </g>
+    <text x="44" y="33" class="mono cat-title" fill="#e2e8f0">02 // BACKEND &amp; DATA ARCHITECTURE</text>
+    <text x="500" y="33" text-anchor="end" class="mono" font-size="11" fill="#475569">SPRING • NODE • SQL/NOSQL</text>
+    <line x1="18" y1="46" x2="502" y2="46" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Row 1: 4 items -->
+    <!-- Spring Boot -->
+    <g transform="translate(18, 62)">
+      <g class="fa-2">
+        <rect width="114" height="54" rx="9" class="chip" stroke="#6db33f" stroke-opacity="0.65" />
+        <circle cx="22" cy="27" r="12" fill="#6db33f" fill-opacity="0.18" />
+        <text x="22" y="31" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#6db33f">SB</text>
+        <text x="40" y="25" class="sans tech-name" font-size="12">Spring</text>
+        <text x="40" y="40" class="mono tech-sub">Boot / Java</text>
+      </g>
+    </g>
+
+    <!-- Node.js -->
+    <g transform="translate(142, 62)">
+      <g class="fa-3">
+        <rect width="114" height="54" rx="9" class="chip" stroke="#83cd29" stroke-opacity="0.65" />
+        <circle cx="22" cy="27" r="12" fill="#83cd29" fill-opacity="0.18" />
+        <text x="22" y="31" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#83cd29">ND</text>
+        <text x="40" y="25" class="sans tech-name" font-size="12">Node.js</text>
+        <text x="40" y="40" class="mono tech-sub">JS Runtime</text>
+      </g>
+    </g>
+
+    <!-- PostgreSQL -->
+    <g transform="translate(266, 62)">
+      <g class="fa-4">
+        <rect width="114" height="54" rx="9" class="chip" stroke="#334155" />
+        <circle cx="22" cy="27" r="12" fill="#336791" fill-opacity="0.22" />
+        <text x="22" y="31" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#60a5fa">PG</text>
+        <text x="40" y="25" class="sans tech-name" font-size="12">Postgres</text>
+        <text x="40" y="40" class="mono tech-sub">Relational</text>
+      </g>
+    </g>
+
+    <!-- MySQL -->
+    <g transform="translate(390, 62)">
+      <g class="fa-5">
+        <rect width="114" height="54" rx="9" class="chip" stroke="#334155" />
+        <circle cx="22" cy="27" r="12" fill="#00758f" fill-opacity="0.22" />
+        <text x="22" y="31" text-anchor="middle" class="mono" font-size="10" font-weight="800" fill="#38bdf8">SQL</text>
+        <text x="40" y="25" class="sans tech-name" font-size="12">MySQL</text>
+        <text x="40" y="40" class="mono tech-sub">ACID Engine</text>
+      </g>
+    </g>
+
+    <!-- Row 2: 3 wider items -->
+    <!-- MongoDB -->
+    <g transform="translate(18, 128)">
+      <g class="fa-1">
+        <rect width="152" height="54" rx="9" class="chip" stroke="#334155" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#47a248" fill-opacity="0.18" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="12" font-weight="800" fill="#47a248">MG</text>
+        <text x="50" y="25" class="sans tech-name">MongoDB</text>
+        <text x="50" y="40" class="mono tech-sub">NoSQL Document</text>
+      </g>
+    </g>
+
+    <!-- Supabase -->
+    <g transform="translate(184, 128)">
+      <g class="fa-2">
+        <rect width="152" height="54" rx="9" class="chip" stroke="#334155" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#3ecf8e" fill-opacity="0.16" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#3ecf8e">SP</text>
+        <text x="50" y="25" class="sans tech-name">Supabase</text>
+        <text x="50" y="40" class="mono tech-sub">Postgres / Auth</text>
+      </g>
+    </g>
+
+    <!-- Firebase -->
+    <g transform="translate(350, 128)">
+      <g class="fa-3">
+        <rect width="152" height="54" rx="9" class="chip" stroke="#334155" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#ffca28" fill-opacity="0.15" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#ffca28">FB</text>
+        <text x="50" y="25" class="sans tech-name">Firebase</text>
+        <text x="50" y="40" class="mono tech-sub">Realtime BaaS</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- PANEL 3: FRONTEND, STATE, 3D & DOCS (Middle Full-Width)   -->
+  <!-- ========================================================= -->
+  <g transform="translate(20, 236)">
+    <rect width="1060" height="200" rx="12" class="panel" />
+    <rect x="40" y="0" width="260" height="2" fill="url(#scanLine)">
+      <animate attributeName="x" values="40;760;40" dur="8s" repeatCount="indefinite" />
+    </rect>
+    <!-- Layers Vector Icon -->
+    <g transform="translate(20, 20)" fill="none" stroke="#3b82f6" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="8,1 16,5 8,9 0,5" />
+      <polyline points="0,9 8,13 16,9" />
+      <polyline points="0,13 8,17 16,13" />
+    </g>
+    <text x="44" y="33" class="mono cat-title" fill="#e2e8f0">03 // FRONTEND ENGINEERING, STATE MANAGEMENT &amp; 3D</text>
+    <text x="1040" y="33" text-anchor="end" class="mono" font-size="11" fill="#475569">10 TECHNOLOGIES</text>
+    <line x1="18" y1="46" x2="1042" y2="46" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Row 1 -->
+    <!-- React -->
+    <g transform="translate(18, 62)">
+      <g class="fa-1">
+        <rect width="194" height="54" rx="9" class="chip" stroke="#38bdf8" stroke-opacity="0.6" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#61dafb" fill-opacity="0.14" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#61dafb">RC</text>
+        <text x="50" y="25" class="sans tech-name">React</text>
+        <text x="50" y="40" class="mono tech-sub">Component UI / Hooks</text>
+      </g>
+    </g>
+
+    <!-- Next.js -->
+    <g transform="translate(225, 62)">
+      <g class="fa-2">
+        <rect width="194" height="54" rx="9" class="chip" stroke="#475569" stroke-opacity="0.65" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#e2e8f0" fill-opacity="0.1" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#f8fafc">NX</text>
+        <text x="50" y="25" class="sans tech-name">Next.js</text>
+        <text x="50" y="40" class="mono tech-sub">SSR / App Router</text>
+      </g>
+    </g>
+
+    <!-- Tailwind CSS -->
+    <g transform="translate(432, 62)">
+      <g class="fa-3">
+        <rect width="194" height="54" rx="9" class="chip" stroke="#334155" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#38bdf8" fill-opacity="0.15" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#38bdf8">TW</text>
+        <text x="50" y="25" class="sans tech-name">Tailwind CSS</text>
+        <text x="50" y="40" class="mono tech-sub">Utility-First Design</text>
+      </g>
+    </g>
+
+    <!-- Vite -->
+    <g transform="translate(639, 62)">
+      <g class="fa-4">
+        <rect width="194" height="54" rx="9" class="chip" stroke="#334155" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#3b82f6" fill-opacity="0.16" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#60a5fa">VT</text>
+        <text x="50" y="25" class="sans tech-name">Vite</text>
+        <text x="50" y="40" class="mono tech-sub">Frontend Tooling</text>
+      </g>
+    </g>
+
+    <!-- HTML5 -->
+    <g transform="translate(846, 62)">
+      <g class="fa-5">
+        <rect width="196" height="54" rx="9" class="chip" stroke="#334155" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#e34f26" fill-opacity="0.16" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#fb923c">H5</text>
+        <text x="50" y="25" class="sans tech-name">HTML5</text>
+        <text x="50" y="40" class="mono tech-sub">Semantic Web</text>
+      </g>
+    </g>
+
+    <!-- Row 2 -->
+    <!-- CSS3 -->
+    <g transform="translate(18, 128)">
+      <g class="fa-2">
+        <rect width="194" height="54" rx="9" class="chip" stroke="#334155" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#1572b6" fill-opacity="0.2" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#60a5fa">C3</text>
+        <text x="50" y="25" class="sans tech-name">CSS3</text>
+        <text x="50" y="40" class="mono tech-sub">Animations / Layouts</text>
+      </g>
+    </g>
+
+    <!-- Redux Toolkit -->
+    <g transform="translate(225, 128)">
+      <g class="fa-3">
+        <rect width="194" height="54" rx="9" class="chip" stroke="#334155" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#38bdf8" fill-opacity="0.15" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#38bdf8">RX</text>
+        <text x="50" y="25" class="sans tech-name">Redux Toolkit</text>
+        <text x="50" y="40" class="mono tech-sub">State Management</text>
+      </g>
+    </g>
+
+    <!-- Zustand -->
+    <g transform="translate(432, 128)">
+      <g class="fa-4">
+        <rect width="194" height="54" rx="9" class="chip" stroke="#334155" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#f59e0b" fill-opacity="0.16" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#fbbf24">ZS</text>
+        <text x="50" y="25" class="sans tech-name">Zustand</text>
+        <text x="50" y="40" class="mono tech-sub">Reactive Store</text>
+      </g>
+    </g>
+
+    <!-- Three.js -->
+    <g transform="translate(639, 128)">
+      <g class="fa-5">
+        <rect width="194" height="54" rx="9" class="chip" stroke="#334155" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#2dd4bf" fill-opacity="0.16" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#2dd4bf">3D</text>
+        <text x="50" y="25" class="sans tech-name">Three.js</text>
+        <text x="50" y="40" class="mono tech-sub">WebGL / 3D Canvas</text>
+      </g>
+    </g>
+
+    <!-- Docusaurus -->
+    <g transform="translate(846, 128)">
+      <g class="fa-1">
+        <rect width="196" height="54" rx="9" class="chip" stroke="#334155" />
+        <rect x="10" y="11" width="32" height="32" rx="7" fill="#10b981" fill-opacity="0.16" />
+        <text x="26" y="32" text-anchor="middle" class="mono" font-size="13" font-weight="800" fill="#34d399">DC</text>
+        <text x="50" y="25" class="sans tech-name">Docusaurus</text>
+        <text x="50" y="40" class="mono tech-sub">MDX / Tech Docs</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- PANEL 4: DEVOPS, CLOUD & TOOLS (Bottom Full-Width)        -->
+  <!-- ========================================================= -->
+  <g transform="translate(20, 452)">
+    <rect width="1060" height="188" rx="12" class="panel" />
+    <rect x="700" y="0" width="260" height="2" fill="url(#scanLine)">
+      <animate attributeName="x" values="760;40;760" dur="8s" repeatCount="indefinite" />
+    </rect>
+    <!-- Cloud / Server Vector Icon -->
+    <g transform="translate(20, 20)" fill="none" stroke="#0ea5e9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="1" y="2" width="15" height="5" rx="1.5" />
+      <rect x="1" y="10" width="15" height="5" rx="1.5" />
+      <circle cx="4.5" cy="4.5" r="0.8" fill="#0ea5e9" />
+      <circle cx="4.5" cy="12.5" r="0.8" fill="#0ea5e9" />
+    </g>
+    <text x="44" y="33" class="mono cat-title" fill="#e2e8f0">04 // CLOUD INFRASTRUCTURE, DEVOPS &amp; OBSERVABILITY</text>
+    <text x="1040" y="33" text-anchor="end" class="mono" font-size="11" fill="#475569">DOCKER • AWS • JENKINS • GRAFANA • GIT • LINUX</text>
+    <line x1="18" y1="46" x2="1042" y2="46" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Docker -->
+    <g transform="translate(18, 66)">
+      <g class="fa-1">
+        <rect width="136" height="100" rx="10" class="chip" stroke="#334155" />
+        <rect x="46" y="14" width="44" height="34" rx="8" fill="#2496ed" fill-opacity="0.18" />
+        <text x="68" y="36" text-anchor="middle" class="mono" font-size="14" font-weight="800" fill="#38bdf8">DKR</text>
+        <text x="68" y="68" text-anchor="middle" class="sans tech-name">Docker</text>
+        <text x="68" y="84" text-anchor="middle" class="mono tech-sub">Containers</text>
+      </g>
+    </g>
+
+    <!-- Jenkins -->
+    <g transform="translate(166, 66)">
+      <g class="fa-2">
+        <rect width="136" height="100" rx="10" class="chip" stroke="#334155" />
+        <rect x="46" y="14" width="44" height="34" rx="8" fill="#ef4444" fill-opacity="0.16" />
+        <text x="68" y="36" text-anchor="middle" class="mono" font-size="14" font-weight="800" fill="#f87171">JNK</text>
+        <text x="68" y="68" text-anchor="middle" class="sans tech-name">Jenkins</text>
+        <text x="68" y="84" text-anchor="middle" class="mono tech-sub">CI/CD Pipelines</text>
+      </g>
+    </g>
+
+    <!-- AWS -->
+    <g transform="translate(314, 66)">
+      <g class="fa-3">
+        <rect width="136" height="100" rx="10" class="chip" stroke="#334155" />
+        <rect x="46" y="14" width="44" height="34" rx="8" fill="#ff9900" fill-opacity="0.16" />
+        <text x="68" y="36" text-anchor="middle" class="mono" font-size="14" font-weight="800" fill="#ff9900">AWS</text>
+        <text x="68" y="68" text-anchor="middle" class="sans tech-name">Amazon AWS</text>
+        <text x="68" y="84" text-anchor="middle" class="mono tech-sub">Cloud Infra</text>
+      </g>
+    </g>
+
+    <!-- Grafana -->
+    <g transform="translate(462, 66)">
+      <g class="fa-4">
+        <rect width="136" height="100" rx="10" class="chip" stroke="#334155" />
+        <rect x="46" y="14" width="44" height="34" rx="8" fill="#f46800" fill-opacity="0.18" />
+        <text x="68" y="36" text-anchor="middle" class="mono" font-size="14" font-weight="800" fill="#fb923c">GFN</text>
+        <text x="68" y="68" text-anchor="middle" class="sans tech-name">Grafana</text>
+        <text x="68" y="84" text-anchor="middle" class="mono tech-sub">Observability</text>
+      </g>
+    </g>
+
+    <!-- Git -->
+    <g transform="translate(610, 66)">
+      <g class="fa-5">
+        <rect width="136" height="100" rx="10" class="chip" stroke="#334155" />
+        <rect x="46" y="14" width="44" height="34" rx="8" fill="#f05032" fill-opacity="0.18" />
+        <text x="68" y="36" text-anchor="middle" class="mono" font-size="14" font-weight="800" fill="#f05032">GIT</text>
+        <text x="68" y="68" text-anchor="middle" class="sans tech-name">Git</text>
+        <text x="68" y="84" text-anchor="middle" class="mono tech-sub">Version Control</text>
+      </g>
+    </g>
+
+    <!-- GitHub -->
+    <g transform="translate(758, 66)">
+      <g class="fa-1">
+        <rect width="136" height="100" rx="10" class="chip" stroke="#334155" />
+        <rect x="46" y="14" width="44" height="34" rx="8" fill="#94a3b8" fill-opacity="0.16" />
+        <text x="68" y="36" text-anchor="middle" class="mono" font-size="14" font-weight="800" fill="#e2e8f0">GH</text>
+        <text x="68" y="68" text-anchor="middle" class="sans tech-name">GitHub</text>
+        <text x="68" y="84" text-anchor="middle" class="mono tech-sub">Actions / Repos</text>
+      </g>
+    </g>
+
+    <!-- Linux -->
+    <g transform="translate(906, 66)">
+      <g class="fa-2">
+        <rect width="136" height="100" rx="10" class="chip" stroke="#334155" />
+        <rect x="46" y="14" width="44" height="34" rx="8" fill="#fcc624" fill-opacity="0.16" />
+        <text x="68" y="36" text-anchor="middle" class="mono" font-size="14" font-weight="800" fill="#fcc624">LNX</text>
+        <text x="68" y="68" text-anchor="middle" class="sans tech-name">Linux</text>
+        <text x="68" y="84" text-anchor="middle" class="mono tech-sub">Bash / Servers</text>
+      </g>
+    </g>
+  </g>
+</svg>
